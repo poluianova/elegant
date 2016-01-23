@@ -1,8 +1,21 @@
 body{
-
+	font: 400 22px/1.27 "Lato", Arial, sans-serif;
 }
 
 /* Typography */
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Raleway", Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h2 {
+	color:  #222222;
+	font-size: 35px;
+}
+a {
+	text-decoration: none;
+
+}
 a,
 input[type="submit"],
 input[type="button"],
@@ -16,6 +29,13 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	color:  #222222;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 54px;
+	border: 3px solid #222222;
+	padding: 0 150px;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -51,7 +71,222 @@ textarea {
 }
 
 /* Layout */
+.ba-grid > [class*="ba-width-"] {
+    padding-left: 30px;
+}
+
+.ba-grid {
+    margin-left: -30px;
+}
 .ba-container{
+	max-width: 1170px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+.ba-header {
+	margin: 0;
+	padding: 0;
+	padding-top: 50px;
+}
+.ba-menu {
+	display: block;
+	margin: 0;
+	margin-right: 41px;
+	padding: 0;
+}
+.ba-banner {
+	min-height: 100vh;
+	background: #000811 url(../img/banner.jpg) no-repeat 50%;
+	background-size: cover;
+	position: relative;
+}
+.ba-menu li{
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 45px;
+}
+.ba-menu li a {
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.ba-menu li a:hover {
+	text-shadow: 1px 3px 2px #00ABF7;
+	transition: text-shadow .2s ease-in;
+}
+.ba-banner__content {
+	max-width: 602px;
+	text-align: center;
+	padding: 238px 0 0;
+	margin: 0 auto;
+	color: #fffefe;
+	font-size: 22px;
+	font-weight: 400;
+}
+.ba-banner__title {
+	font-size: 48px;
+	color: #ffffff;
+	margin: 0 0 79px;
+	position: relative;
+}
+.ba-line:after {
+	content: "";
+	background-color:  #ffffff;
+	width: 86px;
+	height: 2px;
+	position: absolute;
+	top: 99px;
+	left: calc(50% - 43px);
+}
+.ba-banner__text {
+	letter-spacing: 1.1px;
+	margin-bottom: 50px;
+}
+.ba-scroll {
+	background: url(../img/down.svg) no-repeat 50%;
+	position: absolute;
+	width: 92px;
+	height: 92px;
+	bottom: 48px;
+	left: 50%;
+}
+.ba-services {
+	margin: 0;
+	padding: 60px 0 80px;
+}
+.ba-title {
+	position: relative;
+	text-align: center;
+	margin: 0;
+}
+.ba-services h2 {
+	margin: 0 0 150px;
+}
+.ba-line--dark:after {
+	background-color:  #222222;
+	top: 105px;
+}
+.ba-services__function {
+	display: block;
+	text-align: center;
+	padding-top: 16px;
+	box-sizing: border-box;
+}
+.ba-services__function:hover {
+	border: 1px solid #005494;
+}
+.ba-services__title {
+	font-family: "Lato", Arial, sans-serif;
+	color:  #222222;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 1;
+	margin: 30px 0;
+}
+.ba-services__text {
+	color:  #222222;
+	font-size: 16px;
+	line-height: 30px;
+	max-width: 320px;
+}
+.ba-services__img {
+	min-height: 150px;
+	font-size: 0;
+}
+.ba-services__img img {
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.ba-about {
+	background: #1C1C1C url(../img/dolorre.jpg) no-repeat 50%;
+	padding: 160px 0 110px;
+}
+.ba-about__content {
+	max-width: 45%;
+}
+.ba-about h3 {
+	font-family: Lato;
+	color:  #ffffff;
+	font-size: 44.67px;
+	font-weight: 400;
+	line-height: 60px;
+	transform: scaleY(1.0092);
+	margin: 0 0 5px;
+	line-height: 1;
+
+}
+.ba-about p {
+	color:  #ffffff;
+	font-weight: 100;
+	margin: 0 0 60px;
+}
+.ba-about__content a {
+	color:  #ffffff;
+	font-size: 18px;
+	line-height: 28px;
+	text-decoration: underline;
+	font-weight: 100;
+}
+.ba-about__content a:hover {
+	color: #00ABF7;
+}
+.ba-work {
+	padding: 110px 0 75px;
+	text-align: center;
+
+}
+.ba-work h2 {
+	padding-bottom: 160px;
+}
+.ba-about__link {
+	display: block;
+	max-width: 370px;
+	min-height: 420px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	position: relative;
+	margin-bottom: 75px;
+}
+.ba-kinderen {
+	background-image: url(../img/kinderen_link.svg);
+}
+.ba-jetindus {
+	background-image: url(../img/jetindus.jpg);
+}
+.ba-trimplement {
+	background-image: url(../img/trimplement.jpg);
+}
+.ba-about__link:hover:before {
+	background-color: #3E3E3E;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	height: 0;
+	width: 100%;
+	height: 100%;
+}
+.ba-button:hover {
+	background-color: #BABABA;
+}
+
+.ba-footer {
+	background: #041418 url(../img/footer.jpg) no-repeat 50%;
+	padding: 115px 0 118px;
+	text-align: center;
+}
+.ba-footer h2 {
+	color: #ffffff;
+	margin:0 0 145px;
+}
+.ba-footer .ba-line:after {
+	top: 80px;
+}
+.ba-footer-social {
+	display: inline-block;
+	margin-right: 25px;
+}
+.ba-footer-social:last-child {
+	margin-right: 0;
 }
